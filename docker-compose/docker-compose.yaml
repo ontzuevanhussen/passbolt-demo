@@ -26,21 +26,6 @@ services:
       DATASOURCES_DEFAULT_USERNAME: "passbolt"
       DATASOURCES_DEFAULT_PASSWORD: "P4ssb0lt"
       DATASOURCES_DEFAULT_DATABASE: "passbolt"
-      EMAIL_TRANSPORT_DEFAULT_CLASS_NAME: smtp
-      EMAIL_DEFAULT_FROM: noreply@cliniccoding.id
-      EMAIL_DEFAULT_TRANSPORT: reply@cliniccoding.id
-      EMAIL_TRANSPORT_DEFAULT_HOST: mail.cliniccoding.id
-      EMAIL_TRANSPORT_DEFAULT_PORT: 587
-      EMAIL_TRANSPORT_DEFAULT_TIMEOUT: 30
-      EMAIL_TRANSPORT_DEFAULT_USERNAME: noreply@cliniccoding.id
-      EMAIL_TRANSPORT_DEFAULT_PASSWORD: simrs112
-      EMAIL_TRANSPORT_DEFAULT_TLS: tls
-      PASSBOLT_KEY_LENGTH: 3072
-      PASSBOLT_SUBKEY_LENGTH: 3072
-      PASSBOLT_KEY_NAME: ontzuevanhussen
-      PASSBOLT_KEY_EMAIL: ontzuevanhussen@gmail.com
-      PASSBOLT_KEY_EXPIRATION: 0
-      PASSBOLT_SSL_FORCE: true
     volumes:
       - gpg_volume:/etc/passbolt/gpg
       - jwt_volume:/etc/passbolt/jwt
